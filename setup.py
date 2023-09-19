@@ -1,16 +1,16 @@
 from setuptools import setup, find_packages
 
 required_packages = [
-    "graphql-core>=2.1,<3",
-    "graphql-server-core>=1.1.1,<2",
-    "sanic>=0.5.1,<19",
+    "graphql-core>=3.0,<3.3",
+    "graphql-server>=2.0,<3.3",
+    "sanic>=21.12,<24",
 ]
 
 tests_require = ["pytest>=2.7.3", "aiohttp>=3.5.0,<4", "yarl>=1.0,<2.0", "Jinja2>=2.10.1"]
 
 setup(
     name="Sanic-GraphQL",
-    version="1.2.0",
+    version="1.3.0",
     description="Adds GraphQL support to your Sanic application",
     long_description=open("README.rst", encoding="utf-8").read(),
     url="https://github.com/graphql-python/sanic-graphql",
